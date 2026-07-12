@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atelier Gallery | Register &amp; Bid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="atelier-style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">The Atelier Gallery</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="artist.html">Artists</a></li>
+        <li><a href="auction.html">Auction</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">August 2026 Sale</span>
+      <h1>Register &amp; Bid</h1>
+      <p>Reserve a seat for the sale, or place a bid on any open lot below.</p>
+    </div>
+  </div>
+
+  <section class="capacity-section">
+    <div class="capacity-panel">
+      <div class="capacity-heading">
+        <h4>Seats Remaining</h4>
+        <span class="capacity-count"><span id="spots-left">18</span> of <span id="spots-total">60</span> open</span>
+      </div>
+      <div class="capacity-track">
+        <div class="capacity-fill" id="capacity-fill" style="width: 70%;"></div>
+      </div>
+      <p class="capacity-note">Attendance for the August sale is limited to 60 registered bidders and guests. Reserve
+        your spot in advance below.</p>
+    </div>
+  </section>
+
+  <section class="register-section">
+    <div class="register-layout">
+
+      <div class="form-card">
+        <h2>Reserve Your Spot</h2>
+        <p class="form-subtitle">Register to attend or bid remotely at the August sale.</p>
+
+        <form id="reserve-form" novalidate>
+          <div class="form-group">
+            <label for="reserve-name">Full Name</label>
+            <input type="text" id="reserve-name" required>
+          </div>
+          <div class="form-group">
+            <label for="reserve-email">Email</label>
+            <input type="email" id="reserve-email" required>
+          </div>
+          <div class="form-group">
+            <label for="reserve-guests">Number of Seats</label>
+            <select id="reserve-guests">
+              <option value="1">1 &mdash; Just me</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-outline form-submit" id="reserve-submit">Reserve Spot</button>
+          <p class="form-message" id="reserve-message"></p>
+        </form>
+      </div>
+
+      <div class="form-card">
+        <h2>Place a Bid</h2>
+        <p class="form-subtitle">Bidding is open on the following lots.</p>
+
+        <form id="bid-form" novalidate>
+          <div class="form-group">
+            <label for="bid-lot">Lot</label>
+            <select id="bid-lot">
+              <option value="monet-water-lilies-1906" data-current="54000000">Lot 01 &mdash; Water Lilies (Nymphéas),
+                Monet &middot; Current $54,000,000</option>
+              <option value="monet-poplars-epte-1891" data-current="35000000">Lot 03 &mdash; Poplars on the Epte, Monet
+                &middot; Current $35,000,000</option>
+              <option value="vangogh-sunflowers-1888" data-current="200000000">Lot 04 &mdash; Sunflowers, Van Gogh &middot;
+                Current $200,000,000</option>
+              <option value="vangogh-cafe-terrace-1888" data-current="150000000">Lot 06 &mdash; Café Terrace at Night, Van
+                Gogh &middot; Current $150,000,000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bid-amount">Your Bid (USD)</label>
+            <input type="text" id="bid-amount" placeholder="e.g. 10,000,000" required>
+            <span class="form-hint" id="bid-hint">Must exceed the current bid of $54,000,000</span>
+          </div>
+          <div class="form-group">
+            <label for="bid-name">Full Name</label>
+            <input type="text" id="bid-name" required>
+          </div>
+          <div class="form-group">
+            <label for="bid-email">Email</label>
+            <input type="email" id="bid-email" required>
+          </div>
+          <button type="submit" class="btn-outline form-submit" id="bid-submit">Place Bid</button>
+          <p class="form-message" id="bid-message"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <div class="footer-wordmark">The Atelier<br>Gallery</div>
+        <p>Parisian. Elegance. Atelier.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>14 Rue des Beaux-Arts</p>
+        <p>Paris, France 75006</p>
+        <p>By appointment only</p>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <a href="contacts.html">Contact Us</a>
+        <a href="register.html">Register &amp; Bid</a>
+        <a href="mailto:">Email Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Abrantes &middot; Grande &middot; Taclas</p>
+      <p>&copy; The Atelier Gallery 2026</p>
+    </div>
+  </footer>
+
+  <script src="atelier-script.js"></script>
+
+</body>
+
+</html>

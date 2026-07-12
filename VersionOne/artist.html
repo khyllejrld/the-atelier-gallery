@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atelier Gallery | Artists</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="atelier-style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">The Atelier Gallery</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="artist.html" class="active">Artists</a></li>
+        <li><a href="auction.html">Auction</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">The Atelier Gallery</span>
+      <h1>Artists</h1>
+      <p>Two painters, two movements, one small collection.</p>
+    </div>
+  </div>
+
+  <section class="artist-directory">
+    <div class="artist-grid">
+
+      <div class="artist-card">
+        <div class="artist-card-clickable" data-artist-trigger="monet">
+          <img src="images/monet-portrait.jpg" alt="Portrait of Claude Monet">
+          <h3>Claude Monet</h3>
+        </div>
+        <p class="artist-card-years">1840 &ndash; 1926 &nbsp;&middot;&nbsp; French</p>
+        <span class="tag">Impressionism</span>
+        <br>
+        <a href="#monet-spotlight" class="view-works">View Works</a>
+      </div>
+
+      <div class="artist-card">
+        <div class="artist-card-clickable" data-artist-trigger="vangogh">
+          <img src="images/vangogh-portrait.jpg" alt="Portrait of Vincent van Gogh">
+          <h3>Vincent van Gogh</h3>
+        </div>
+        <p class="artist-card-years">1853 &ndash; 1890 &nbsp;&middot;&nbsp; Dutch</p>
+        <span class="tag">Post-Impressionism</span>
+        <br>
+        <a href="index.html?artist=vangogh#gallery" class="view-works">View Works</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gallery-section" id="biography">
+    <div class="gallery-section-head">
+      <div>
+        <h2 class="mega-title">A Glimpse into<br>their Lives</h2>
+        <p class="kicker">The French Impressionalist &nbsp;/&nbsp; The Man Simply referred to as "Vincent"</p>
+      </div>
+  </section>
+  <section class="about-section">
+    <div class="about-section-grid">
+      <div>
+        <span class="eyebrow">Biography</span>
+        <h2>Claude Monet</h2>
+      </div>
+      <p>Born in Paris and raised in Le Havre, Monet began as a caricaturist before turning to landscape painting outdoors, 
+        a practice that would define Impressionism. He co-founded the movement's first group exhibition in 1874, where the term 
+        "Impressionism" was coined in response to his painting Impression, Sunrise. <br>
+        
+        <br>Working largely en plein air, Monet returned again and again to the same subjects, haystacks, poplars, the façade of 
+        Rouen Cathedral, recording how a single scene shifted under changing light, weather, and season. <br>
+        
+        <br>In his later years at Giverny, he focused almost entirely on the water 
+        garden he built himself, producing the Water Lilies series that occupied him until his death in 1926. Though his eyesight 
+        declined sharply in his final decade, he kept painting, and the late Water Lilies canvases grew looser and more abstract, 
+        foreshadowing developments in painting that would come long after him.</p>    
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section-grid">
+      <div>
+        <h2>Vincent van Gogh</h2>
+      </div>
+      <p>Born in Groot-Zundert in the Netherlands, van Gogh came to painting relatively late, after failed attempts at careers in 
+        art dealing and the ministry. He moved to Paris in 1886, where exposure to Impressionist and Neo-Impressionist painters 
+        pushed his palette toward brighter, more saturated color. <br>
+        
+        <br>Seeking cheaper light and a subject of his own, he relocated to Arles in the south of France, where he painted with 
+        extraordinary speed and intensity, producing Sunflowers, Café Terrace at Night, and dozens of other canvases in little more than 
+        a year. <br>
+        
+        <br> His mental health deteriorated during this period, culminating in a breakdown that led him to voluntarily enter the 
+        asylum at Saint-Rémy-de-Provence, where he continued to paint, including The Starry Night, working from memory and from the view 
+        outside his window. <br>
+        
+        <br>Van Gogh sold almost nothing during his lifetime and died in 1890 at the age of thirty-seven, two years before 
+        his brother Theo, an art dealer, began the effort that would eventually bring his work international recognition.
+</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <div class="footer-wordmark">The Atelier<br>Gallery</div>
+        <p>A small, closely studied collection of two painters across two movements.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>14 Rue des Beaux-Arts</p>
+        <p>Paris, France 75006</p>
+        <p>By appointment only</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="index.html">Gallery</a>
+        <a href="auction.html">Auction</a>
+        <a href="news.html">News</a>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <a href="contacts.html">Contact Us</a>
+        <a href="register.html">Register &amp; Bid</a>
+        <a href="mailto:info@atelier-gallery.example">info@atelier-gallery.example</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Abrantes &middot; Grande &middot; Taclas</p>
+      <p>&copy; The Atelier Gallery 2026</p>
+    </div>
+  </footer>
+
+  <script src="atelier-script.js"></script>
+
+</body>
+
+</html>

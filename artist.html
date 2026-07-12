@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atelier Gallery | Artists</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="atelier-style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo"><a href="index.html">The Atelier Gallery</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="artist.html" class="active">Artists</a></li>
+        <li><a href="auction.html">Auction</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">The Atelier Gallery</span>
+      <h1>Artists</h1>
+      <p>Two painters, two movements, one small collection.</p>
+    </div>
+  </div>
+
+  <section class="artist-directory">
+    <div class="artist-grid">
+
+      <div class="artist-card">
+        <div class="artist-card-clickable" data-artist-trigger="monet">
+          <img src="images/monet-portrait.jpg" alt="Portrait of Claude Monet">
+          <h3>Claude Monet</h3>
+        </div>
+        <p class="artist-card-years">1840 &ndash; 1926 &nbsp;&middot;&nbsp; French</p>
+        <span class="tag">Impressionism</span>
+        <br>
+        <a href="#monet-spotlight" class="view-works">View Works</a>
+      </div>
+
+      <div class="artist-card">
+        <div class="artist-card-clickable" data-artist-trigger="vangogh">
+          <img src="images/vangogh-portrait.jpg" alt="Portrait of Vincent van Gogh">
+          <h3>Vincent van Gogh</h3>
+        </div>
+        <p class="artist-card-years">1853 &ndash; 1890 &nbsp;&middot;&nbsp; Dutch</p>
+        <span class="tag">Post-Impressionism</span>
+        <br>
+        <a href="index.html?artist=vangogh#gallery" class="view-works">View Works</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gallery-section" id="biography">
+    <div class="gallery-section-head">
+      <div>
+        <h2 class="mega-title">A Glimpse into<br>their Lives</h2>
+        <p class="kicker">The French Impressionist &nbsp;/&nbsp; The Man Simply Referred to as "Vincent"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section-grid">
+      <div>
+        <span class="eyebrow">Biography</span>
+        <h2>Claude Monet</h2>
+      </div>
+      <p>Let's start with the man Impressionism is basically named after. Monet grew up in Le Havre sketching
+        caricatures for pocket money, long before he ever picked up a landscape brush &mdash; a funny start for
+        someone who'd go on to spend decades painting the same pond. <br>
+
+        <br>He helped organize the 1874 exhibition that gave the whole movement its name, after a critic mocked one of
+        his paintings, Impression, Sunrise, as unfinished and sloppy. The name stuck, and so did Monet's habit: paint
+        the same subject again and again &mdash; haystacks, poplar trees, the front of Rouen Cathedral &mdash; and let
+        the shifting light do the storytelling. <br>
+
+        <br>By the time he settled at Giverny, he'd built himself a water garden purely so he'd never run out of a
+        subject worth returning to. He kept painting it, in versions that grew looser and more abstract, right up until
+        his eyesight failed and his life ended in 1926.
+      </p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section-grid">
+      <div>
+        <h2>Vincent van Gogh</h2>
+      </div>
+      <p>Van Gogh's story is a much shorter one. He grew up in the Netherlands and tried a couple of other careers first
+        &mdash; art dealing, then training for the ministry &mdash; before painting finally stuck, and by then he didn't
+        have much time to waste. <br>
+
+        <br>Moving to Paris in 1886 put him in the same rooms as the Impressionists, and their color rubbed off on him
+        fast. Looking for cheaper light and more of it, he headed south to Arles, where he painted at a pace that's hard
+        to picture: Sunflowers, Café Terrace at Night, and dozens more, all within about a year. <br>
+
+        <br>It was also in Arles that his mental health began to break down, badly enough that he checked himself into
+        the asylum at Saint-Rémy-de-Provence. Even there, he kept painting &mdash; The Starry Night came from that
+        period, worked partly from memory and partly from the view outside his window. <br>
+
+        <br>He died in 1890, only thirty-seven, having sold almost nothing in his lifetime. It was his brother Theo, an
+        art dealer, who spent the next two years laying the groundwork for the recognition Van Gogh never got to see.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <div class="footer-wordmark">The Atelier<br>Gallery</div>
+        <p>Parisian. Elegance. Atelier.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>14 Rue des Beaux-Arts</p>
+        <p>Paris, France 75006</p>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <a href="contacts.html">Contact Us</a>
+        <a href="register.html">Register &amp; Bid</a>
+        <a href="mailto:">Email Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Abrantes &middot; Grande &middot; Taclas</p>
+      <p>&copy; The Atelier Gallery 2026</p>
+    </div>
+  </footer>
+  <script src="atelier-script.js"></script>
+
+</body>
+
+</html>
