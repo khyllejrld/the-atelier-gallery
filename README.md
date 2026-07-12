@@ -4,7 +4,7 @@ A static website for a curated art gallery and auction house featuring two artis
 
 ## Site Link
 
-the-atelier-gallery.vercel.app
+[The Atelier Gallery](the-atelier-gallery.vercel.app)
 
 ## Overview
 
