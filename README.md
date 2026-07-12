@@ -2,6 +2,10 @@
 
 A static website for a curated art gallery and auction house featuring two artists: Claude Monet and Vincent van Gogh.
 
+## Site Link
+
+the-atelier-gallery.vercel.app
+
 ## Overview
 
 The Atelier Gallery presents a small, curated collection of six paintings across two artists. The site supports browsing the collection, reading artist biographies, viewing auction lots, registering for sales, placing bids, and contacting the gallery.
