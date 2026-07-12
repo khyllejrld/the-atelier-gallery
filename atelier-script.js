@@ -1,9 +1,3 @@
-// ==========================================================
-// Data: the paintings and artists shown across the site.
-// (In a real gallery this would come from a database instead
-// of being hard-coded here.)
-// ==========================================================
-
 const paintings = [
   {
     id: "monet-water-lilies-1906",
@@ -130,15 +124,9 @@ const artists = [
   }
 ];
 
-// Tracks which item is currently showing in the pop-up viewer,
-// and whether that item is a painting or an artist.
-let viewerMode = null; // "painting" | "artist"
+let viewerMode = null;
 let currentPaintingIndex = 0;
 let currentArtistIndex = 0;
-
-// ==========================================================
-// Pop-up viewer (the "lightbox" that opens over the page)
-// ==========================================================
 
 function buildViewer() {
   if (document.getElementById("atelier-lightbox")) return;
@@ -240,7 +228,6 @@ function closeViewer() {
   document.body.classList.remove("lightbox-open");
 }
 
-// direction is -1 for previous, 1 for next
 function showNextOrPrevious(direction) {
   if (viewerMode === "painting") {
     currentPaintingIndex = (currentPaintingIndex + direction + paintings.length) % paintings.length;
@@ -250,10 +237,6 @@ function showNextOrPrevious(direction) {
     renderArtistInViewer(currentArtistIndex);
   }
 }
-
-// ==========================================================
-// Click handlers that open the pop-up viewer
-// ==========================================================
 
 function setupViewerTriggers() {
   document.querySelectorAll("a[data-work]").forEach((link) => {
@@ -270,11 +253,6 @@ function setupViewerTriggers() {
     });
   });
 }
-
-// ==========================================================
-// "All Artists / Monet / Van Gogh" filter buttons on the
-// homepage gallery grid
-// ==========================================================
 
 function setupGalleryFilterButtons() {
   document.querySelectorAll(".filters").forEach((filterGroup) => {
@@ -303,8 +281,6 @@ function setupGalleryFilterButtons() {
   });
 }
 
-// If the homepage is opened with ?artist=monet in the URL
-// (e.g. from the Artists page), pre-select that artist's filter.
 function applyArtistFilterFromURL() {
   const params = new URLSearchParams(window.location.search);
   const artistId = params.get("artist");
@@ -318,10 +294,6 @@ function applyArtistFilterFromURL() {
     }, 200);
   }
 }
-
-// ==========================================================
-// Auction page: artist / status / price filters for the lots
-// ==========================================================
 
 function setupAuctionFilters() {
   const panel = document.querySelector(".filter-panel");
@@ -357,10 +329,6 @@ function setupAuctionFilters() {
   [...artistCheckboxes, ...statusCheckboxes].forEach((box) => box.addEventListener("change", applyFilters));
   priceInputs.forEach((input) => input.addEventListener("change", applyFilters));
 }
-
-// ==========================================================
-// Register & Bid page: seat counter + the two forms
-// ==========================================================
 
 function setupRegisterPage() {
   const reserveForm = document.getElementById("reserve-form");
@@ -470,10 +438,6 @@ function setupRegisterPage() {
   }
 }
 
-// ==========================================================
-// Contact page form
-// ==========================================================
-
 function setupContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -503,10 +467,6 @@ function setupContactForm() {
     message.className = "contact-form-message success";
   });
 }
-
-// ==========================================================
-// Run everything once the page has loaded
-// ==========================================================
 
 document.addEventListener("DOMContentLoaded", () => {
   setupViewerTriggers();
